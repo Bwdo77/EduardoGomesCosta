@@ -1,0 +1,388 @@
+html
+{
+    height: 100%;
+}
+
+body
+{
+    font-family: "Inter", sans-serif;
+    font-size: 3vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #0f242d, #203a43, #2c5364);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+}
+
+hr
+{
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+li
+{
+    margin-bottom: 1%;
+}
+
+a
+{
+    text-decoration: none;
+    color: black;
+}
+a:hover
+{
+    color: rgb(137, 137, 137);
+}
+
+.mainContainer
+{
+    border: solid rgb(203, 202, 202) 2px;
+    background-color: azure;
+    width: 75%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin: 3%;
+}
+
+.profileContainer
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.pictureContainer
+{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 40%;
+}
+.pictureContainer img
+{
+    width: 65%;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border: solid black 1px;
+    border-radius: 35%;
+}
+
+.bioContainer
+{
+    margin-top: 2.5%;
+    margin-right: 5%;
+    font-size: 75%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.bio
+{
+    word-wrap: break-word;
+    font-size: 50%;
+}
+
+.radioContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.infoContainer
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.middle {
+width: 100%;
+text-align: center;
+}
+.middle input[type=radio] {
+display: none;
+}
+.middle input[type=radio]:checked + .box {
+background-color: #007e90;
+}
+.middle input[type=radio]:checked + .box span {
+color: white;
+transform: translateY(50%);
+}
+.middle input[type=radio]:checked + .box span:before {
+transform: translateY(0px);
+opacity: 1;
+}
+.middle .box {
+width: 10vw;
+height: 10vw;
+background-color: #bbf2fac6;
+transition: all 250ms ease;
+will-change: transition;
+display: inline-block;
+text-align: center;
+cursor: pointer;
+position: relative;
+font-size: 1.5vw;
+font-weight: 900;
+border-radius: 5%;
+}
+.middle .box span {
+position: absolute;
+left: 0;
+right: 0;
+transition: all 300ms ease;
+user-select: none;
+color: #007e90;
+}
+.middle .box span:before {
+font-size: 1vw;
+font-family: "FontAwesome";
+display: block;
+transform: translateY(-10px);
+opacity: 0;
+transition: all 300ms ease-in-out;
+font-weight: normal;
+color: white;
+}
+.middle .jobs span:before {
+    content: "\f0b1";
+    font-size: 3vw;
+}
+.middle .school span:before {
+    content: "\f040";
+    font-size: 3vw;
+}
+.middle .skills span:before {
+    content: "\f1b3";
+    font-size: 3vw;
+}
+.middle .projects span:before {
+    content: "\f07c";
+    font-size: 3vw;
+}
+.middle .awards span:before {
+    content: "\f091";
+    font-size: 3vw;
+}
+
+.collapsible {
+background-color: #bbf2fac6;
+color: #007e90;
+border: none;
+cursor: pointer;
+text-align: left;
+padding: 2.5%;
+font-size: 1.5vw;
+width: 75%;
+font-weight: bold;
+}
+.collapsible .date
+{
+    font-size: 1.2vw;
+}
+.active, .collapsible:hover {
+background-color: #007e90;
+color: white;
+}
+.content {
+max-height: 0;
+width: 75%;
+font-size: 1.3vw;
+overflow: hidden;
+transition: max-height 0.2s ease-out;
+background-color: #bbf2fac6;
+}
+.content p
+{
+    margin: 2%;
+}
+.content ul
+{
+    margin-bottom: 5%;
+    margin-left: 3%;
+}
+
+.projectContainer
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.projectInfo
+{
+    display: flex;
+    flex-direction: row;
+    width: 65%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    background-color: #bbf2fac6;
+    padding: 3%;
+    border-radius: 2%;
+    height: fit-content;
+}
+
+.projectImage
+{
+    width: 90%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3%;
+}
+
+.projectImage1
+{
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.projectText1
+{
+    width: 40%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+.projectImage2
+{
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.projectText2
+{
+    width: 40%;
+    font-size: 1vw;
+    display: flex;
+    justify-content: flex-start;
+    align-self: flex-start;
+    flex-direction: column;
+}
+
+#cf1 {
+    position:relative;
+    width: 60%;
+    display: flex;
+    justify-content: flex-start;
+  }
+  
+  #cf1 img {
+    position:absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    width: 95%;
+    display: flex;
+    justify-content: flex-start;
+    align-self: center;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3%;
+  }
+  
+  #cf1 img.top:hover {
+    opacity:0;
+  }
+
+  #cf2 {
+    position:relative;
+    width: 60%;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  #cf2 img {
+    position:absolute;
+    -webkit-transition: opacity 0.5s ease-in-out;
+    -moz-transition: opacity 0.5s ease-in-out;
+    -o-transition: opacity 0.5s ease-in-out;
+    transition: opacity 0.5s ease-in-out;
+    width: 95%;
+    display: flex;
+    justify-content: flex-end;
+    align-self: center;
+    height: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 3%;
+  }
+  
+  #cf2 img.top:hover {
+    opacity:0;
+  }
+
+  .projectTitle
+  {
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    color: #007e90;
+  }
+
+  .awardContainer
+  {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .awardInfo
+{
+    display: flex; 
+    flex-direction: column;
+    width: 65%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    background-color: #bbf2fac6;
+    padding: 3%;
+    border-radius: 2%;
+    height: fit-content;
+    font-size: 1.3vw;
+}
+
+.awardTitle
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    color: #007e90;
+}
+
+.fa-square-up-right
+{
+    margin-left: 2%;
+}
+
+.certificates
+{
+    text-decoration: none;
+    color: #007e90;
+}
+
+.certificates:hover
+{
+    color: #08a6bf;
+}
+
+.certificateDate
+{
+    font-size: 1.2vw;
+    color: #007e90;
+}
