@@ -16,7 +16,9 @@
             </div>
             <div class="bioContainer">
                 <b>
-                    Eduardo Costa
+                    <a  target="_blank" rel="noopener" href="https://www.linkedin.com/in/eduardogomescosta/">
+                        Eduardo Costa
+                    </a>
                 </b>
                 <small>
                     Business Consultant Intern
@@ -370,7 +372,7 @@
                             + "<p><b>Interpersonal Skills:</b></p>"
                             + "<ul>"
                                 + "<li>Teamwork</li>"
-                                + "<li>Responsability</li>"
+                                + "<li>Responsibility</li>"
                                 + "<li>Motivation</li>"
                             + "</ul>"
 
@@ -401,7 +403,7 @@
                                 +"</div>"
                                 +"<div class='projectText1'>"
                                     +"<p class='projectTitle'>Once Upon a Time</p>"
-                                    +"<p><i>You are a detective searching through different levels for a solution for a crime!</i></p>"
+                                    +"<p><i>You are a detective searching through different levels for a solution to a crime!</i></p>"
                                     +"<p>This is a game made in Unity Engine using C#, it is a 2D platformer where the player must investigate a crime scene.</p>"
                                 +"</div>"
                             + "</div>" 
@@ -411,8 +413,8 @@
                             +"<div class='projectInfo'>"
                                 +"<div class='projectText2'>"
                                     +"<p class='projectTitle'>Roll Faster</p>"
-                                    +"<p><i>Try to roll as fast as possible to the finsih line!</i></p>"
-                                    +"<p>This is a game made in Unity Engine using C#, it is a 3D platformer where the player must solve various dynamic puzzles in order to reahc the end in the least amount of time.</p>"
+                                    +"<p><i>Try to roll as fast as possible to the finish line!</i></p>"
+                                    +"<p>This is a game made in Unity Engine using C#, it is a 3D platformer where the player must solve various dynamic puzzles in order to reach the end in the least amount of time.</p>"
                                 +"</div>"
                                 +"<div class='projectImage2' id='cf2'>"
                                     +"<img src='Resources/RollFaster.gif' alt='Once Upon a Time' class='projectImage'>"
@@ -439,8 +441,8 @@
                             +"<div class='projectInfo'>"
                                 +"<div class='projectText2'>"
                                     +"<p class='projectTitle'>Tic-Tac-Toe</p>"
-                                    +"<p>This project was created during my final high school year. Differently from my other projetcs, this one is entirely made out of hand-written code Lazarus.</p>"
-                                    +"<p>It is a simple Tic-Tac-Toe game made in Pascal, the final result was an executable that can be played in every computer.</p>"
+                                    +"<p>This project was created during my final high school year. Differently from my other projects, this one is entirely made out of hand-written code Lazarus.</p>"
+                                    +"<p>It is a simple Tic-Tac-Toe game made in Pascal, the final result was an executable that can be played on every computer.</p>"
                                 +"</div>"
                                 +"<div class='projectImage2' id='cf2'>"
                                     +"<img src='Resources/TicTacToe.gif' alt='Once Upon a Time' class='projectImage'>"
@@ -451,17 +453,22 @@
                     }
                     else if(this.value == "awards")
                     {
-                        info.innerHTML = "<div class='projectContainer'>"
-                            +"<div class='projectInfo'>"
-                                +"<div class='projectImage1' id='cf1'>"
-                                    +"<img src='Resources/OnceUponATime.gif' alt='Once Upon a Time' class='projectImage'>"
-                                    +"<img src='Resources/OnceUponATime5.jpeg' alt='Once Upon a Time' class='top'>"
-                                +"</div>"
-                                +"<div class='projectText1'>"
-                                    +"<p class='projectTitle'>Once Upon a Time</p>"
-                                    +"<p><i>You are a detective searching through different levels for a solution for a crime!</i></p>"
-                                    +"<p>This is a game made in Unity Engine using C#, it is a 2D platformer where the player must investigate a crime scene.</p>"
-                                +"</div>"
+                        info.innerHTML = "<div class='awardContainer'>"
+                            +"<div class='awardInfo'>"
+                                +"<div class='awardTitle'>"
+                                    +"Best Student in System Analysis - NOVA IMS / SYONE"
+                                    +"<a target='_blank' rel='noopener' href='Resources/Certificado.pdf' class='certificates'>"
+                                        +"<i class='fa-solid fa-square-up-right'></i>"
+                                    +"</a>"
+                                + "</div>"
+                                +"<div>"
+                                    +"<p>This award was given to the best student in the System Analysis curricular unit.</p>"
+                                    +"<p>Given by NOVA IMS and sponsered by SYONE.</p>"
+                                + "</div>"
+                                + "<div class='certificateDate'>"
+                                    + "<br>"
+                                    + "<b>06/12/2022</b>"
+                                + "</div>"
                             + "</div>" 
                         + "</div>";
                     }

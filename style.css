@@ -330,4 +330,59 @@ background-color: #bbf2fac6;
     font-weight: bold;
     margin-bottom: 1%;
     margin-top: 1%;
+    color: #007e90;
   }
+
+  .awardContainer
+  {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .awardInfo
+{
+    display: flex; 
+    flex-direction: column;
+    width: 65%;
+    margin-top: 1%;
+    margin-bottom: 2%;
+    background-color: #bbf2fac6;
+    padding: 3%;
+    border-radius: 2%;
+    height: fit-content;
+    font-size: 1.3vw;
+}
+
+.awardTitle
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    margin-bottom: 1%;
+    margin-top: 1%;
+    color: #007e90;
+}
+
+.fa-square-up-right
+{
+    margin-left: 2%;
+}
+
+.certificates
+{
+    text-decoration: none;
+    color: #007e90;
+}
+
+.certificates:hover
+{
+    color: #08a6bf;
+}
+
+.certificateDate
+{
+    font-size: 1.2vw;
+    color: #007e90;
+}
